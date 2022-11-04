@@ -11,4 +11,5 @@ De entre las diferentes caracteristicas que se tendran estaran:
   * Imagenes propias para ayudar en la relacion de conceptos.
   * Grabaciones de voz con las palabras escogidas.
   * Dificultad dinamica para evitar el decinteres del niño por frustracion.
-hola.
+
+

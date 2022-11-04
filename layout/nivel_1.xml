@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#C1A3D3DF"
+    android:orientation="vertical">
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="90"
+            android:indeterminate="false"
+            android:max="10"
+            android:progress="0"
+            android:progressTint="#64D612" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/luckiest_guy"
+            android:text="0/10"
+            android:textSize="25sp" />
+
+        <Space
+            android:layout_width="22dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Puntuacion:"
+            android:visibility="gone"
+            tools:visibility="gone" />
+
+    </TableRow>
+
+    <FrameLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="674dp"
+        android:layout_gravity="bottom">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="703dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="889dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textCorrecto1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/luckiest_guy"
+                    android:gravity="center_horizontal"
+                    android:text="¡Correcto!"
+                    android:textSize="24sp"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/linearMal1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="104dp"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    tools:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/coronaMal1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="97dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/corona" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearPerfecto1"
+                    android:layout_width="348dp"
+                    android:layout_height="116dp"
+                    android:layout_gravity="center_horizontal"
+
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/coronaPerfect11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/corona" />
+
+                    <ImageView
+                        android:id="@+id/coronaPerfect12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/corona" />
+
+                    <ImageView
+                        android:id="@+id/coronaPerfect13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/corona" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearBien1"
+                    android:layout_width="315dp"
+                    android:layout_height="77dp"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    tools:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/coronaBien11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/corona" />
+
+                    <ImageView
+                        android:id="@+id/coronaBien12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/corona" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imagenLuz"
+                    android:layout_width="246dp"
+                    android:layout_height="236dp"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/foco" />
+
+                <LinearLayout
+                    android:id="@+id/linearLuz1"
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    tools:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/textLuzCorrecto"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/luckiest_guy"
+                        android:gravity="center_horizontal"
+                        android:text="Luz"
+                        android:textSize="60sp" />
+
+                    <ImageButton
+                        android:id="@+id/luzSound"
+                        android:layout_width="80dp"
+                        android:layout_height="65dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/dummy_button"
+                        app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearContenido1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="319dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textLuz1"
+                            android:layout_width="241dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/luckiest_guy"
+                            android:gravity="center_horizontal"
+                            android:text="L____z"
+                            android:textSize="30sp" />
+
+                        <ImageButton
+                            android:id="@+id/soundLuz1"
+                            android:layout_width="79dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/dummy_button"
+                            android:soundEffectsEnabled="true"
+                            app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearPregunta1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/pregunta1"
+                            android:layout_width="245dp"
+                            android:layout_height="49dp"
+                            android:layout_gravity="center|center_horizontal"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="@font/luckiest_guy"
+                            android:text="¿Que letra falta?"
+                            android:textSize="25sp" />
+
+                        <ImageButton
+                            android:id="@+id/soundPregunta1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="41dp"
+                            android:layout_gravity="bottom|center"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/dummy_button"
+                            android:soundEffectsEnabled="true"
+                            app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearRadioButtons1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup1"
+                            android:layout_width="256dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radioButton11"
+                                style="@android:style/Widget.DeviceDefault.Light.CompoundButton.RadioButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/luckiest_guy"
+                                android:text="a"
+                                android:textSize="20sp" />
+
+                            <RadioButton
+                                android:id="@+id/radioButton12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/luckiest_guy"
+                                android:text="e"
+                                android:textSize="20sp" />
+
+                            <RadioButton
+                                android:id="@+id/radioButton13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/luckiest_guy"
+                                android:text="u"
+                                android:textSize="20sp" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearButtonSounds1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/radioButtonSound11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/dummy_button"
+                            android:soundEffectsEnabled="true"
+                            app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+
+                        <Space
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <ImageButton
+                            android:id="@+id/radioButtonSound12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/dummy_button"
+                            android:soundEffectsEnabled="true"
+                            app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+
+                        <Space
+                            android:layout_width="25dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <ImageButton
+                            android:id="@+id/radioButtonSound13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/dummy_button"
+                            android:soundEffectsEnabled="true"
+                            app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/siguiente1"
+                    android:layout_width="123dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="#6FC7DD"
+                    android:fontFamily="@font/luckiest_guy"
+                    android:gravity="center_horizontal"
+                    android:text="Siguiente"
+                    android:textColor="#1D33F1"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/linearVuelveIntentarlo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    tools:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/textVuelveIntentar1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/luckiest_guy"
+                        android:gravity="center_horizontal"
+                        android:text="¡Vuelve a intentarlo!"
+                        android:textSize="18sp"
+                        android:visibility="visible" />
+
+                    <ImageButton
+                        android:id="@+id/vuelveIntentarSound1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/dummy_button"
+                        android:soundEffectsEnabled="true"
+                        android:visibility="visible"
+                        app:srcCompat="@android:drawable/ic_lock_silent_mode_off"
+                        tools:visibility="visible" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/botonAceptar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="#6FC7DD"
+                    android:fontFamily="@font/luckiest_guy"
+                    android:text="Aceptar"
+                    android:textColor="#1D33F1"
+                    tools:visibility="visible" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

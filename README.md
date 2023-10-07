@@ -1,6 +1,6 @@
 <p align="center"> <img src="https://raw.githubusercontent.com/proyecto-silabaTEAndo/aplicacion-silabateando/main/drawable/logo.png", title="logo"/> </p>
 
-## Proyecto de gestion de proyectos de software
+## Proyecto Silabateando
 
 La finalidad de este proyecto es ayudar a niños con sindrome del espectro autista *(TEA)* a aprender a leer y relacionar conceptos.
 
